@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name z80_parts)(type Legacy)(uri Z:/electricity/z80_computer/z80_parts.lib)(options "")(descr ""))
+)
