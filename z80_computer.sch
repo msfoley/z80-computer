@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -195,56 +195,6 @@ Text Label 4900 4350 2    50   ~ 0
 A15
 Wire Wire Line
 	3350 4750 3100 4750
-Wire Wire Line
-	5950 4800 5700 4800
-Wire Wire Line
-	5950 4600 5700 4600
-Wire Wire Line
-	5950 4250 5700 4250
-Wire Wire Line
-	5950 4050 5700 4050
-Wire Wire Line
-	5950 3700 5700 3700
-Wire Wire Line
-	5950 3500 5700 3500
-Wire Wire Line
-	5950 2950 5700 2950
-Wire Wire Line
-	5950 3150 5700 3150
-Wire Wire Line
-	6550 3050 6850 3050
-Wire Wire Line
-	6550 3600 6850 3600
-Wire Wire Line
-	6550 4150 6850 4150
-Wire Wire Line
-	6550 4700 6850 4700
-$Comp
-L power:GND #PWR012
-U 1 1 5BB905DF
-P 3700 1850
-F 0 "#PWR012" H 3700 1600 50  0001 C CNN
-F 1 "GND" H 3705 1677 50  0000 C CNN
-F 2 "" H 3700 1850 50  0001 C CNN
-F 3 "" H 3700 1850 50  0001 C CNN
-	1    3700 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR011
-U 1 1 5BB9068D
-P 3700 750
-F 0 "#PWR011" H 3700 600 50  0001 C CNN
-F 1 "+5V" H 3715 923 50  0000 C CNN
-F 2 "" H 3700 750 50  0001 C CNN
-F 3 "" H 3700 750 50  0001 C CNN
-	1    3700 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 800  3700 750 
-Wire Wire Line
-	3700 1850 3700 1800
 $Comp
 L Device:Crystal Y1
 U 1 1 5BB94465
@@ -600,61 +550,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 6500 3200 6450
 Connection ~ 3200 6500
-$Comp
-L 74xx:74LS32 U4
-U 1 1 5BC1AF5F
-P 6250 3050
-F 0 "U4" H 6250 3375 50  0000 C CNN
-F 1 "74LS32" H 6250 3284 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 3050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 6250 3050 50  0001 C CNN
-	1    6250 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 2 1 5BC1AFFE
-P 6250 3600
-F 0 "U4" H 6250 3925 50  0000 C CNN
-F 1 "74LS32" H 6250 3834 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 3600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 6250 3600 50  0001 C CNN
-	2    6250 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 3 1 5BC1B083
-P 6250 4150
-F 0 "U4" H 6250 4475 50  0000 C CNN
-F 1 "74LS32" H 6250 4384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 4150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 6250 4150 50  0001 C CNN
-	3    6250 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 4 1 5BC1B118
-P 6250 4700
-F 0 "U4" H 6250 5025 50  0000 C CNN
-F 1 "74LS32" H 6250 4934 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 6250 4700 50  0001 C CNN
-	4    6250 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 5 1 5BC1B1AD
-P 3700 1300
-F 0 "U4" H 3930 1346 50  0000 L CNN
-F 1 "74LS32" H 3930 1255 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3700 1300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3700 1300 50  0001 C CNN
-	5    3700 1300
-	1    0    0    -1  
-$EndComp
 Text Label 2700 4350 2    50   ~ 0
 ~CLK
 Wire Wire Line
@@ -663,30 +558,6 @@ Text Label 3100 3150 0    50   ~ 0
 ~CLK
 Text Label 3100 2850 0    50   ~ 0
 ~RST
-Text Label 6850 3050 2    50   ~ 0
-~IOWR
-Text Label 5700 2950 0    50   ~ 0
-~IORQ
-Text Label 5700 3150 0    50   ~ 0
-~WR
-Text Label 5700 3500 0    50   ~ 0
-~IORQ
-Text Label 5700 3700 0    50   ~ 0
-~RD
-Text Label 5700 4050 0    50   ~ 0
-~MREQ
-Text Label 5700 4250 0    50   ~ 0
-~WR
-Text Label 5700 4600 0    50   ~ 0
-~MREQ
-Text Label 5700 4800 0    50   ~ 0
-~RD
-Text Label 6850 3600 2    50   ~ 0
-~IORD
-Text Label 6850 4150 2    50   ~ 0
-~MEMWR
-Text Label 6850 4700 2    50   ~ 0
-~MEMRD
 Text Label 2050 2850 2    50   ~ 0
 ~RST
 Text Label 3100 3450 0    50   ~ 0
@@ -1072,16 +943,16 @@ $EndComp
 $Comp
 L power:GND #PWR018
 U 1 1 5BDF068C
-P 7500 2150
-F 0 "#PWR018" H 7500 1900 50  0001 C CNN
-F 1 "GND" H 7505 1977 50  0000 C CNN
-F 2 "" H 7500 2150 50  0001 C CNN
-F 3 "" H 7500 2150 50  0001 C CNN
-	1    7500 2150
+P 7600 2150
+F 0 "#PWR018" H 7600 1900 50  0001 C CNN
+F 1 "GND" H 7605 1977 50  0000 C CNN
+F 2 "" H 7600 2150 50  0001 C CNN
+F 3 "" H 7600 2150 50  0001 C CNN
+	1    7600 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 2150 7500 2100
+	7600 2150 7600 2100
 Wire Wire Line
 	7950 5150 7950 5100
 Wire Wire Line
@@ -1089,22 +960,22 @@ Wire Wire Line
 Wire Wire Line
 	8000 2200 7850 2200
 Wire Wire Line
-	7500 2100 8000 2100
+	7600 2100 8000 2100
 $Comp
 L power:+5V #PWR019
 U 1 1 5BE14BC7
-P 7650 2250
-F 0 "#PWR019" H 7650 2100 50  0001 C CNN
-F 1 "+5V" H 7665 2423 50  0000 C CNN
-F 2 "" H 7650 2250 50  0001 C CNN
-F 3 "" H 7650 2250 50  0001 C CNN
-	1    7650 2250
+P 7750 2250
+F 0 "#PWR019" H 7750 2100 50  0001 C CNN
+F 1 "+5V" H 7765 2423 50  0000 C CNN
+F 2 "" H 7750 2250 50  0001 C CNN
+F 3 "" H 7750 2250 50  0001 C CNN
+	1    7750 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2300 7650 2300
+	8000 2300 7750 2300
 Wire Wire Line
-	7650 2300 7650 2250
+	7750 2300 7750 2250
 Wire Wire Line
 	9400 2900 9800 2900
 Wire Wire Line
@@ -1160,18 +1031,18 @@ D0
 $Comp
 L power:GND #PWR0101
 U 1 1 5BE5ADEC
-P 7500 3050
-F 0 "#PWR0101" H 7500 2800 50  0001 C CNN
-F 1 "GND" H 7505 2877 50  0000 C CNN
-F 2 "" H 7500 3050 50  0001 C CNN
-F 3 "" H 7500 3050 50  0001 C CNN
-	1    7500 3050
+P 7600 3050
+F 0 "#PWR0101" H 7600 2800 50  0001 C CNN
+F 1 "GND" H 7605 2877 50  0000 C CNN
+F 2 "" H 7600 3050 50  0001 C CNN
+F 3 "" H 7600 3050 50  0001 C CNN
+	1    7600 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3000 7500 3000
+	8000 3000 7600 3000
 Wire Wire Line
-	7500 3000 7500 3050
+	7600 3000 7600 3050
 Text Notes 5350 6000 0    50   ~ 0
 Use a flip flop as the boot ROM/RAM bank switcher, disable input to the bank switcher when the flip flop is asserted.
 Text Label 7850 2200 0    50   ~ 0
@@ -1196,6 +1067,114 @@ Wire Wire Line
 	8000 4000 7700 4000
 Text Label 7700 4000 0    50   ~ 0
 ~CLK
+$Comp
+L power:+5V #PWR011
+U 1 1 5BBC9AE7
+P 7650 4850
+F 0 "#PWR011" H 7650 4700 50  0001 C CNN
+F 1 "+5V" H 7665 5023 50  0000 C CNN
+F 2 "" H 7650 4850 50  0001 C CNN
+F 3 "" H 7650 4850 50  0001 C CNN
+	1    7650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4900 7650 4900
+Wire Wire Line
+	7650 4900 7650 4850
+$Sheet
+S 6150 2200 750  700 
+U 5BD04429
+F0 "signals" 50
+F1 "signals.sch" 50
+F2 "~IORQ" I L 6150 2500 50 
+F3 "~M1" I L 6150 2300 50 
+F4 "~MREQ" I L 6150 2400 50 
+F5 "~RD" I L 6150 2600 50 
+F6 "~WR" I L 6150 2700 50 
+F7 "~INTACK" O R 6900 2800 50 
+F8 "~OPFETCH" O R 6900 2700 50 
+F9 "~MEMRD" O R 6900 2300 50 
+F10 "~MEMWR" O R 6900 2400 50 
+F11 "~IORD" O R 6900 2500 50 
+F12 "~IOWR" O R 6900 2600 50 
+$EndSheet
+Wire Wire Line
+	6900 2300 7250 2300
+Wire Wire Line
+	6900 2400 7250 2400
+Wire Wire Line
+	6900 2500 7250 2500
+Wire Wire Line
+	6900 2600 7250 2600
+Wire Wire Line
+	6900 2700 7250 2700
+Wire Wire Line
+	6900 2800 7250 2800
+Wire Wire Line
+	6150 2300 5900 2300
+Wire Wire Line
+	6150 2400 5900 2400
+Wire Wire Line
+	6150 2500 5900 2500
+Wire Wire Line
+	6150 2600 5900 2600
+Wire Wire Line
+	6150 2700 5900 2700
+Text Label 5900 2300 0    50   ~ 0
+~M1
+Text Label 5900 2400 0    50   ~ 0
+~MREQ
+Text Label 5900 2500 0    50   ~ 0
+~IORQ
+Text Label 5900 2600 0    50   ~ 0
+~RD
+Text Label 5900 2700 0    50   ~ 0
+~WR
+Text Label 7250 2300 2    50   ~ 0
+~MEMRD
+Text Label 7250 2400 2    50   ~ 0
+~MEMWR
+Text Label 7250 2500 2    50   ~ 0
+~IORD
+Text Label 7250 2600 2    50   ~ 0
+~IOWR
+Text Label 7250 2700 2    50   ~ 0
+~OPFETCH
+Text Label 7250 2800 2    50   ~ 0
+~INTACK
+Wire Wire Line
+	6150 3200 5850 3200
+Wire Wire Line
+	6150 3300 5850 3300
+Wire Wire Line
+	6150 3400 5850 3400
+Wire Wire Line
+	6150 3500 5850 3500
+Wire Wire Line
+	6150 3600 5850 3600
+Wire Wire Line
+	6950 3300 7300 3300
+Wire Bus Line
+	6950 3400 7300 3400
+Wire Bus Line
+	6950 3500 7300 3500
+Text Label 5850 3200 0    50   ~ 0
+~RST
+Text Label 5850 3300 0    50   ~ 0
+~MEMRD
+Text Label 5850 3400 0    50   ~ 0
+~MEMWR
+Text Label 5850 3500 0    50   ~ 0
+~IOWR
+Text Label 5850 3600 0    50   ~ 0
+~IORD
+Text Label 7300 3300 2    50   ~ 0
+~BOOT
+Text Label 7300 3400 2    50   ~ 0
+A[0..15]
+Text Label 7300 3500 2    50   ~ 0
+~D[0..7]
 Wire Bus Line
 	5150 4650 5150 5350
 Wire Bus Line
@@ -1204,4 +1183,18 @@ Wire Bus Line
 	5150 2950 5150 4450
 Wire Bus Line
 	9700 3700 9700 5200
+$Sheet
+S 6150 3100 800  600 
+U 5BDBC281
+F0 "boot_memory" 50
+F1 "boot_memory.sch" 50
+F2 "~RST" I L 6150 3200 50 
+F3 "~BOOT" O R 6950 3300 50 
+F4 "~IOWR" I L 6150 3500 50 
+F5 "A[0..15]" B R 6950 3400 50 
+F6 "D[0..7]" B R 6950 3500 50 
+F7 "~IORD" I L 6150 3600 50 
+F8 "~MEMRD" I L 6150 3300 50 
+F9 "~MEMWR" I L 6150 3400 50 
+$EndSheet
 $EndSCHEMATC
